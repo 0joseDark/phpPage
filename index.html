@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <title>Criar Utilizador Autorizado</title>
+</head>
+<body>
+    <h1>Criar Utilizador Autorizado</h1>
+    <form action="processar_utilizador.php" method="post">
+        <label for="username">Nome de Utilizador:</label>
+        <input type="text" name="username" id="username" required>
+        <br>
+        <label for="password">Palavra-passe:</label>
+        <input type="password" name="password" id="password" required>
+        <br>
+        <br>
+        <h2>Permissões de Acesso</h2>
+        <p>Selecione as pastas e links a que este utilizador terá acesso:</p>
+        <ul>
+            <li><input type="checkbox" name="pastas[]" value="pasta1"> Pasta 1</li>
+            <li><input type="checkbox" name="pastas[]" value="pasta2"> Pasta 2</li>
+            <li><input type="checkbox" name="pastas[]" value="pasta3"> Pasta 3</li>
+        </ul>
+        <ul>
+            <li><input type="checkbox" name="links[]" value="link1"> Link 1</li>
+            <li><input type="checkbox" name="links[]" value="link2"> Link 2</li>
+            <li><input type="checkbox" name="links[]" value="link3"> Link 3</li>
+        </ul>
+        <br>
+        <input type="submit" value="Criar Utilizador">
+    </form>
+</body>
+</html>
